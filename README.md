@@ -1,4 +1,4 @@
-# Project Name
+# Alpha Trader
 
 #### -- Project Status: [Active, On-Hold, Completed]
 
