@@ -53,7 +53,7 @@ class MovingAverageCrossOverStrategy(Strategy):
 
         signals[signalColumn][self.short_window:] = np.where((signals[smaT][self.short_window:] 
             < signals[lmaT][self.short_window:]) & (signals[smaTMinus1][self.short_window:] 
-            > signals[lmaTMinus1][self.short_window:]), 1.0, signals[signalColumn])
+            > signals[lmaTMinus1][self.short_window:]), -1.0, signals[signalColumn])
 
         # Take the difference of the signals in order to generate actual trading orders
         # positions have been shifted by 1 time-step, which is done to avoid look-ahead bias 
